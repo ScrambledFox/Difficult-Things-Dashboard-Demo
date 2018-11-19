@@ -1,0 +1,11 @@
+body{
+	background-color: lightblue;
+	font-family: verdana;
+}
+
+.layers {
+	margin: 100px;
+	margin-left: screen.width / 2;
+	border: 1px solid black;
+	padding: 2px;	
+}
