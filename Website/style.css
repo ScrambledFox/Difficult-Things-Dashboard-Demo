@@ -1,11 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
-	background-color: lightblue;
+	background-color: white;
 	font-family: verdana;
 }
 
-.layers {
-	margin: 100px;
-	margin-left: screen.width / 2;
-	border: 1px solid black;
-	padding: 2px;	
+.column{
+	float: left;
+	padding: 10px;
+	min-height: 98vh;
+	text-align: center;
+}
+
+.left{
+	width: 70%;
+}
+
+.right{
+	width: 30%;
+	border-left: 3px solid black;
+}
+
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.helper{
+	display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.center{
+	display: block;
+	margin: auto;
+	max-width: 500px;
+	max-height: 500px;
 }
