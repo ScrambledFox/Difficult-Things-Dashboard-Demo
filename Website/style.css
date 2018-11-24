@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0px;
 }
 
 body{
@@ -10,7 +11,7 @@ body{
 .column{
 	float: left;
 	padding: 10px;
-	min-height: 98vh;
+	height: 100vh;
 	text-align: center;
 }
 
@@ -29,15 +30,14 @@ body{
 	clear: both;
 }
 
-.helper{
-	display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+.holder{
+	background: url(media/space.jpeg) no-repeat center center;
 }
 
-.center{
-	display: block;
-	margin: auto;
-	max-width: 500px;
-	max-height: 500px;
+li {
+	font-size: 30px;
+}
+
+h1 {
+	font-size: 100px;
 }
