@@ -34,6 +34,10 @@ body{
 	background: url(media/space.jpeg) no-repeat center center;
 }
 
+.layerInput{
+	display: flex;
+}
+
 li {
 	font-size: 30px;
 }

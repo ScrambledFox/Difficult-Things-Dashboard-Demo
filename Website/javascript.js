@@ -27,6 +27,12 @@ function updateLayerList(){
 		newItem.appendChild(itemValue);
 		layerList.appendChild(newItem);
 	}
+
+	var newLayerItem = document.createElement("li");
+	var newLayerValue = document.createTextNode("New Layer...");
+
+	newLayerItem.appendChild(newLayerValue);
+	layerList.appendChild(newLayerItem);
 	
 }
 
