@@ -1,15 +1,16 @@
-function myFunction() {	
-	document.getElementById("test").innerHTML = "testing";
-}
-
-
 var layers = [
 	{name:"Background", active:true, icon:"none"},
 	{name:"Function", active:true, icon:"none"},
 	{name:"Unsorted", active:true, icon:"none"},
 	{name:"Temperature", active:true, icon:"none"}];
 
-addLayer("Testing", "none");
+
+function openLayerWindow(){
+
+	var windowModal = document.getElementById("newLayerModal");
+	windowModal.style.display = "block";
+
+}
 
 function updateLayerList(){
 
@@ -29,9 +30,16 @@ function updateLayerList(){
 	}
 
 	var newLayerItem = document.createElement("li");
+	var newLayerLink = document.createElement("a");
 	var newLayerValue = document.createTextNode("New Layer...");
 
-	newLayerItem.appendChild(newLayerValue);
+	newLayerLink.appendChild(newLayerValue);
+
+	newLayerLink.title = "Create a new layer";
+	newLayerLink.onclick = openLayerWindow;
+	//newLayerLink.href = "#"; // Linkable
+
+	newLayerItem.appendChild(newLayerLink);
 	layerList.appendChild(newLayerItem);
 	
 }

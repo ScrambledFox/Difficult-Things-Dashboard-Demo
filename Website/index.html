@@ -24,5 +24,35 @@
 	  </div>
 	</div>
 
+	<!-- The Modal -->
+	<div id="newLayerModal" class="modal">
+		<!-- Modal content -->
+ 		<div class="modal-content">
+    		<!--<span class="close">&times;</span>-->
+    		<p>
+    			<h2>Adding new Layer</h2>
+    			<br>
+    			<form>
+    				Layer Name: <input type="text" name="layerName">
+    				<br>
+    				<br>
+    				<textarea rows="4" cols="50">New Layer Description</textarea>
+    				<br>
+    				<br>
+    				<button type="submit">Cancel</button> <button type="submit">OK</button>
+    			</form>
+    		</p>
+  		</div>
+	</div>
+
+	<script>
+		var windowModal = document.getElementById("newLayerModal");
+		var span = document.getElementsByClassName("close")[0];
+
+		span.onclick = function () {
+			windowModal.style.display = "none";
+		}
+	</script>
+
 </body>
 </html>
